@@ -1,0 +1,23 @@
+---
+# tasks file for snmp
+
+- name: Include OS-specific variables
+  include_vars: "{{ ansible_os_family }}.yml"
+
+- include_tasks: SNMP-RedHat.yml
+  when: ansible_os_family == 'RedHat'
+
+- include_tasks: SNMP-Debian.yml
+  when: ansible_os_family == 'Debian'
+
+- name: Configure SNMP
+  template:
+    src: "{{ item }}"
+    dest: "{{ snmp_config }}"
+  with_first_found:
+    - "templates/snmpd.conf.j2"
+
+- name: Restart SNMP service
+  service:
+    name: "{{ snmp_service }}"
+    state: restarted

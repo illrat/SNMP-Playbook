@@ -1,0 +1,6 @@
+---
+
+snmp_package: snmp
+snmp_service: snmpd
+snmp_config: /etc/snmp/snmpd.conf
+

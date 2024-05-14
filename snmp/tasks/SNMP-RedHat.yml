@@ -1,0 +1,3 @@
+---
+- name: Ensure SNMP packages are installed (RedHat).
+  yum: name={{ snmp_package }} state=installed
