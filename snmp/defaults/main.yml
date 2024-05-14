@@ -1,9 +1,9 @@
 ---
 # defaults file for snmp
 
-systemuser_string: SystemwuUser
-systemgroup_string: SystemwuUser
-community_string: SystemwuGroup
+systemuser_string: <user>
+systemgroup_string: <group>
+community_string: <community>
 
 
 
