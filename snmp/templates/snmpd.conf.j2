@@ -56,12 +56,12 @@ group   {{ systemgroup_string }} v2c           {{ systemuser_string }}
 #       name           incl/excl     subtree         mask(optional)
 view    systemview    included   .1.3.6.1.2.1.1
 view    systemview    included   .1.3.6.1.2.1.25.1.1
-
+view    {{ access_string }}    included   .1
 ####
 # Finally, grant the group read-only access to the systemview view.
 
 #       group          context sec.model sec.level prefix read   write  notif
-access  {{ systemgroup_string }} ""      any       noauth    systemview  all none none
+access  {{ systemgroup_string }} ""      any       noauth    systemview  {{ access_string }} none none
 # -----------------------------------------------------------------------------
 
 # Here is a commented out example configuration that allows less
