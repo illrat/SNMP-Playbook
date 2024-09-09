@@ -38,7 +38,7 @@ This Ansible playbook automates the deployment and configuration of SNMP (Simple
 
 ## Configuration
 
-You can customize the SNMP configuration by modifying the variables in `group_vars/all.yml`:
+You can customize the SNMP configuration by modifying the variables in `default/main.yaml`:
 
 - `systemuser_string`: Specifies the system user that the SNMP daemon will run as. This is important for security purposes.
 - `systemgroup_string`: Specifies the system group that the SNMP daemon will run as. This works in conjunction with the system user for proper permissions. 
