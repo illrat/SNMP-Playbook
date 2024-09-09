@@ -22,7 +22,7 @@ This Ansible playbook automates the deployment and configuration of SNMP (Simple
    cd SNMP-Playbook
    ```
 
-2. Update the `inventory` file with your target hosts:
+2. Update the `hosts` file with your target hosts:
    ```
    [snmp_hosts]
    192.168.1.100
