@@ -24,7 +24,7 @@ This Ansible playbook automates the deployment and configuration of SNMP (Simple
 
 2. Update the `hosts` file with your target hosts:
    ```
-   [snmp_hosts]
+   [hosts]
    192.168.1.100
    192.168.1.101
    ```
