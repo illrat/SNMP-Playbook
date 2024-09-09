@@ -6,9 +6,5 @@ systemgroup_string: <group>
 community_string: <community>
 access_string: <access>
 
-# com2sec SystemwuUser default systemwu
-# group   SystemwuGroup  v1           SystemwuUser
-# group   SystemwuGroup  v2c           SystemwuUser
-# view    all           included   .1
-# access  SystemwuGroup ""      any       noauth    exact  all none none
+
 
