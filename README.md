@@ -1,4 +1,3 @@
-# SNMP-Playbook
 # SNMP Playbook
 
 This Ansible playbook automates the deployment and configuration of SNMP (Simple Network Management Protocol) on Debian and RedHat based systems.
