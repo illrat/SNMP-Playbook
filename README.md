@@ -29,7 +29,7 @@ This Ansible playbook automates the deployment and configuration of SNMP (Simple
    192.168.1.101
    ```
 
-3. Modify the `group_vars/all.yml` file to set your desired SNMP community string and other configurations.
+3. Modify the `default/main.yaml` file to set your desired SNMP community string and other configurations.
 
 4. Run the playbook:
    ```
